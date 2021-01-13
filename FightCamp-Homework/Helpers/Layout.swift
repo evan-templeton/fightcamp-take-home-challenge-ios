@@ -11,7 +11,7 @@ import UIKit
 // MARK: - Layout
 
 extension CGFloat {
-
+    
     /// CTA button height
     public static var buttonHeight: CGFloat { 40 }
     /// CTA button corner radius

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7261132925A3A3DC0015C3C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7261132825A3A3DC0015C3C1 /* README.md */; };
+		72846BE2259D1D4300699A97 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846BE1259D1D4300699A97 /* MainViewController.swift */; };
+		72846C26259D31C500699A97 /* PackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846C25259D31C500699A97 /* PackageViewController.swift */; };
+		72846C2A259D387300699A97 /* PackageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846C29259D387300699A97 /* PackageData.swift */; };
+		72846C3E259D5F7700699A97 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846C3D259D5F7700699A97 /* Package.swift */; };
+		72846C42259D615E00699A97 /* PackageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846C41259D615E00699A97 /* PackageAPI.swift */; };
+		72846C4E259E1F4800699A97 /* PackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846C4D259E1F4800699A97 /* PackageViewModel.swift */; };
+		72846C56259E9AAA00699A97 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72846C55259E9AAA00699A97 /* Images.swift */; };
 		C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD9779249AC04D0044B734 /* AppDelegate.swift */; };
 		C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD977B249AC04D0044B734 /* SceneDelegate.swift */; };
 		C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BD9782249AC04E0044B734 /* Assets.xcassets */; };
@@ -20,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7261132825A3A3DC0015C3C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		72846BE1259D1D4300699A97 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		72846C25259D31C500699A97 /* PackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewController.swift; sourceTree = "<group>"; };
+		72846C29259D387300699A97 /* PackageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageData.swift; sourceTree = "<group>"; };
+		72846C3D259D5F7700699A97 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		72846C41259D615E00699A97 /* PackageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageAPI.swift; sourceTree = "<group>"; };
+		72846C4D259E1F4800699A97 /* PackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageViewModel.swift; sourceTree = "<group>"; };
+		72846C55259E9AAA00699A97 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		C1BD9776249AC04D0044B734 /* FC-Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FC-Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BD9779249AC04D0044B734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1BD977B249AC04D0044B734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +61,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72846C28259D386100699A97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72846C29259D387300699A97 /* PackageData.swift */,
+				72846C3D259D5F7700699A97 /* Package.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72846C36259D5D3F00699A97 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				72846C4D259E1F4800699A97 /* PackageViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		72846C40259D614D00699A97 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72846C41259D615E00699A97 /* PackageAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C1BD976D249AC04D0044B734 = {
 			isa = PBXGroup;
 			children = (
+				7261132825A3A3DC0015C3C1 /* README.md */,
 				C1BD9778249AC04D0044B734 /* FightCamp-Homework */,
 				C1BD9777249AC04D0044B734 /* Products */,
 			);
@@ -64,6 +106,9 @@
 		C1BD9778249AC04D0044B734 /* FightCamp-Homework */ = {
 			isa = PBXGroup;
 			children = (
+				72846C40259D614D00699A97 /* Services */,
+				72846C36259D5D3F00699A97 /* View Models */,
+				72846C28259D386100699A97 /* Models */,
 				C1FD02AB249B23E10029487C /* Helpers */,
 				C1BD979A249AFF0C0044B734 /* Assets */,
 				C1BD9779249AC04D0044B734 /* AppDelegate.swift */,
@@ -71,6 +116,8 @@
 				C1BD977B249AC04D0044B734 /* SceneDelegate.swift */,
 				C1BD9787249AC04E0044B734 /* Info.plist */,
 				C1BD9782249AC04E0044B734 /* Assets.xcassets */,
+				72846BE1259D1D4300699A97 /* MainViewController.swift */,
+				72846C25259D31C500699A97 /* PackageViewController.swift */,
 			);
 			path = "FightCamp-Homework";
 			sourceTree = "<group>";
@@ -91,6 +138,7 @@
 				C1BD978E249AC0790044B734 /* Colors.swift */,
 				C1BD9790249AC0810044B734 /* Fonts.swift */,
 				C1FD02AC249B23F30029487C /* Layout.swift */,
+				72846C55259E9AAA00699A97 /* Images.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -122,7 +170,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Alexandre Marcotte";
 				TargetAttributes = {
 					C1BD9775249AC04D0044B734 = {
@@ -153,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7261132925A3A3DC0015C3C1 /* README.md in Resources */,
 				C1BD9793249AC3620044B734 /* packages.json in Resources */,
 				C1BD9783249AC04E0044B734 /* Assets.xcassets in Resources */,
 				C1BD979E249AFFCC0044B734 /* Font-2.otf in Resources */,
@@ -168,10 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72846BE2259D1D4300699A97 /* MainViewController.swift in Sources */,
 				C1BD9791249AC0810044B734 /* Fonts.swift in Sources */,
 				C1BD978F249AC0790044B734 /* Colors.swift in Sources */,
+				72846C4E259E1F4800699A97 /* PackageViewModel.swift in Sources */,
 				C1FD02AD249B23F30029487C /* Layout.swift in Sources */,
+				72846C56259E9AAA00699A97 /* Images.swift in Sources */,
+				72846C2A259D387300699A97 /* PackageData.swift in Sources */,
+				72846C26259D31C500699A97 /* PackageViewController.swift in Sources */,
 				C1BD977A249AC04D0044B734 /* AppDelegate.swift in Sources */,
+				72846C42259D615E00699A97 /* PackageAPI.swift in Sources */,
+				72846C3E259D5F7700699A97 /* Package.swift in Sources */,
 				C1BD977C249AC04D0044B734 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +261,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -265,6 +322,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -298,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N7DJ322W5H;
+				DEVELOPMENT_TEAM = S5ZY8JZUHT;
 				INFOPLIST_FILE = "FightCamp-Homework/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N7DJ322W5H;
+				DEVELOPMENT_TEAM = S5ZY8JZUHT;
 				INFOPLIST_FILE = "FightCamp-Homework/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
